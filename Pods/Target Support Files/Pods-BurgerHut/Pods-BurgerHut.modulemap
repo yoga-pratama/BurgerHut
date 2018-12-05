@@ -1,0 +1,6 @@
+framework module Pods_BurgerHut {
+  umbrella header "Pods-BurgerHut-umbrella.h"
+
+  export *
+  module * { export * }
+}
