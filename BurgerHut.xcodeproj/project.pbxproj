@@ -8,22 +8,36 @@
 
 /* Begin PBXBuildFile section */
 		0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27421B7B24900D9A730 /* AppDelegate.swift */; };
-		0A01D27721B7B24900D9A730 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27621B7B24900D9A730 /* ViewController.swift */; };
 		0A01D27A21B7B24900D9A730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D27821B7B24900D9A730 /* Main.storyboard */; };
 		0A01D27D21B7B24900D9A730 /* BurgerHut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27B21B7B24900D9A730 /* BurgerHut.xcdatamodeld */; };
 		0A01D27F21B7B24A00D9A730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D27E21B7B24A00D9A730 /* Assets.xcassets */; };
 		0A01D28221B7B24A00D9A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D28021B7B24A00D9A730 /* LaunchScreen.storyboard */; };
+		0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144321B7B5ED0039EA1D /* HomeViewController.swift */; };
+		0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144521B7B62C0039EA1D /* barTabBarController.swift */; };
+		0ACB3FBD21B7B77C0070B4BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ACB3FBC21B7B77C0070B4BD /* GoogleService-Info.plist */; };
+		0ACB3FBF21B7B93B0070B4BD /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FBE21B7B93B0070B4BD /* menuViewController.swift */; };
+		0ACB3FC121B7B94E0070B4BD /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FC021B7B94E0070B4BD /* OrderViewController.swift */; };
+		0ACB3FC321B7CB520070B4BD /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FC221B7CB520070B4BD /* moreViewController.swift */; };
+		F9A6D705281C6E0FD1EE16FF /* Pods_BurgerHut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0A01D27121B7B24900D9A730 /* BurgerHut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerHut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A01D27421B7B24900D9A730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A01D27621B7B24900D9A730 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0A01D27921B7B24900D9A730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A01D27C21B7B24900D9A730 /* BurgerHut.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BurgerHut.xcdatamodel; sourceTree = "<group>"; };
 		0A01D27E21B7B24A00D9A730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A01D28121B7B24A00D9A730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A01D28321B7B24A00D9A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A21144321B7B5ED0039EA1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0A21144521B7B62C0039EA1D /* barTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barTabBarController.swift; sourceTree = "<group>"; };
+		0ACB3FBC21B7B77C0070B4BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		0ACB3FBE21B7B93B0070B4BD /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
+		0ACB3FC021B7B94E0070B4BD /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		0ACB3FC221B7CB520070B4BD /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
+		843BCBCFF3685FE87CA500A0 /* Pods-BurgerHut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHut.release.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut.release.xcconfig"; sourceTree = "<group>"; };
+		8882D0E2E857FD0EF0968559 /* Pods-BurgerHut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut.debug.xcconfig"; sourceTree = "<group>"; };
+		E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerHut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A6D705281C6E0FD1EE16FF /* Pods_BurgerHut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				0A01D27321B7B24900D9A730 /* BurgerHut */,
 				0A01D27221B7B24900D9A730 /* Products */,
+				889D7A91EA4068A0D6EE1EBA /* Pods */,
+				EEEEFE00AF2A2BD0CF02CAC6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +73,61 @@
 		0A01D27321B7B24900D9A730 /* BurgerHut */ = {
 			isa = PBXGroup;
 			children = (
+				0A01D28B21B7B29000D9A730 /* Controller */,
+				0A01D28A21B7B28500D9A730 /* Model */,
+				0A01D28921B7B26700D9A730 /* View */,
 				0A01D27421B7B24900D9A730 /* AppDelegate.swift */,
-				0A01D27621B7B24900D9A730 /* ViewController.swift */,
 				0A01D27821B7B24900D9A730 /* Main.storyboard */,
 				0A01D27E21B7B24A00D9A730 /* Assets.xcassets */,
 				0A01D28021B7B24A00D9A730 /* LaunchScreen.storyboard */,
 				0A01D28321B7B24A00D9A730 /* Info.plist */,
 				0A01D27B21B7B24900D9A730 /* BurgerHut.xcdatamodeld */,
+				0ACB3FBC21B7B77C0070B4BD /* GoogleService-Info.plist */,
 			);
 			path = BurgerHut;
+			sourceTree = "<group>";
+		};
+		0A01D28921B7B26700D9A730 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A01D28A21B7B28500D9A730 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A01D28B21B7B29000D9A730 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A21144321B7B5ED0039EA1D /* HomeViewController.swift */,
+				0A21144521B7B62C0039EA1D /* barTabBarController.swift */,
+				0ACB3FBE21B7B93B0070B4BD /* menuViewController.swift */,
+				0ACB3FC021B7B94E0070B4BD /* OrderViewController.swift */,
+				0ACB3FC221B7CB520070B4BD /* moreViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		889D7A91EA4068A0D6EE1EBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8882D0E2E857FD0EF0968559 /* Pods-BurgerHut.debug.xcconfig */,
+				843BCBCFF3685FE87CA500A0 /* Pods-BurgerHut.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EEEEFE00AF2A2BD0CF02CAC6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +137,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A01D28621B7B24A00D9A730 /* Build configuration list for PBXNativeTarget "BurgerHut" */;
 			buildPhases = (
+				856E065FBD50AA75448A212E /* [CP] Check Pods Manifest.lock */,
 				0A01D26D21B7B24900D9A730 /* Sources */,
 				0A01D26E21B7B24900D9A730 /* Frameworks */,
 				0A01D26F21B7B24900D9A730 /* Resources */,
+				1D246E6714B97DBE03CA60C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A01D28221B7B24A00D9A730 /* LaunchScreen.storyboard in Resources */,
+				0ACB3FBD21B7B77C0070B4BD /* GoogleService-Info.plist in Resources */,
 				0A01D27F21B7B24A00D9A730 /* Assets.xcassets in Resources */,
 				0A01D27A21B7B24900D9A730 /* Main.storyboard in Resources */,
 			);
@@ -133,14 +199,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D246E6714B97DBE03CA60C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		856E065FBD50AA75448A212E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BurgerHut-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A01D26D21B7B24900D9A730 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0A01D27D21B7B24900D9A730 /* BurgerHut.xcdatamodeld in Sources */,
-				0A01D27721B7B24900D9A730 /* ViewController.swift in Sources */,
+				0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */,
+				0ACB3FC321B7CB520070B4BD /* moreViewController.swift in Sources */,
 				0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */,
+				0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */,
+				0ACB3FBF21B7B93B0070B4BD /* menuViewController.swift in Sources */,
+				0ACB3FC121B7B94E0070B4BD /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +405,7 @@
 		};
 		0A01D28721B7B24A00D9A730 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8882D0E2E857FD0EF0968559 /* Pods-BurgerHut.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +424,7 @@
 		};
 		0A01D28821B7B24A00D9A730 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843BCBCFF3685FE87CA500A0 /* Pods-BurgerHut.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
