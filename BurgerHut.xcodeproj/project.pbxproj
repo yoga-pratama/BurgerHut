@@ -14,10 +14,18 @@
 		0A01D28221B7B24A00D9A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D28021B7B24A00D9A730 /* LaunchScreen.storyboard */; };
 		0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144321B7B5ED0039EA1D /* HomeViewController.swift */; };
 		0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144521B7B62C0039EA1D /* barTabBarController.swift */; };
+		0A90E1ED21B8DB44007E7DFD /* promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90E1EC21B8DB44007E7DFD /* promo.swift */; };
+		0A921E2021B91802009A09FE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E1F21B91802009A09FE /* Collection.swift */; };
+		0A921E2221B91905009A09FE /* ArrayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E2121B91905009A09FE /* ArrayCollection.swift */; };
+		0A921E2421B9FFF7009A09FE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E2321B9FFF7009A09FE /* Menu.swift */; };
+		0A921E2621BA4AB2009A09FE /* Price.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E2521BA4AB2009A09FE /* Price.swift */; };
 		0ACB3FBD21B7B77C0070B4BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0ACB3FBC21B7B77C0070B4BD /* GoogleService-Info.plist */; };
 		0ACB3FBF21B7B93B0070B4BD /* menuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FBE21B7B93B0070B4BD /* menuViewController.swift */; };
 		0ACB3FC121B7B94E0070B4BD /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FC021B7B94E0070B4BD /* OrderViewController.swift */; };
 		0ACB3FC321B7CB520070B4BD /* moreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACB3FC221B7CB520070B4BD /* moreViewController.swift */; };
+		0AF8F0D121B8BFA500D09F99 /* HomeTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D021B8BFA500D09F99 /* HomeTableCellTableViewCell.swift */; };
+		0AF8F0D321B8C1ED00D09F99 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D221B8C1ED00D09F99 /* GetData.swift */; };
+		0AF8F0D521B8C24800D09F99 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */; };
 		F9A6D705281C6E0FD1EE16FF /* Pods_BurgerHut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,10 +39,18 @@
 		0A01D28321B7B24A00D9A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A21144321B7B5ED0039EA1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0A21144521B7B62C0039EA1D /* barTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barTabBarController.swift; sourceTree = "<group>"; };
+		0A90E1EC21B8DB44007E7DFD /* promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promo.swift; sourceTree = "<group>"; };
+		0A921E1F21B91802009A09FE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		0A921E2121B91905009A09FE /* ArrayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCollection.swift; sourceTree = "<group>"; };
+		0A921E2321B9FFF7009A09FE /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		0A921E2521BA4AB2009A09FE /* Price.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Price.swift; sourceTree = "<group>"; };
 		0ACB3FBC21B7B77C0070B4BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		0ACB3FBE21B7B93B0070B4BD /* menuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menuViewController.swift; sourceTree = "<group>"; };
 		0ACB3FC021B7B94E0070B4BD /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		0ACB3FC221B7CB520070B4BD /* moreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moreViewController.swift; sourceTree = "<group>"; };
+		0AF8F0D021B8BFA500D09F99 /* HomeTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellTableViewCell.swift; sourceTree = "<group>"; };
+		0AF8F0D221B8C1ED00D09F99 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
+		0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
 		843BCBCFF3685FE87CA500A0 /* Pods-BurgerHut.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHut.release.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut.release.xcconfig"; sourceTree = "<group>"; };
 		8882D0E2E857FD0EF0968559 /* Pods-BurgerHut.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerHut.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut.debug.xcconfig"; sourceTree = "<group>"; };
 		E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerHut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +106,8 @@
 		0A01D28921B7B26700D9A730 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0AF8F0D021B8BFA500D09F99 /* HomeTableCellTableViewCell.swift */,
+				0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -97,6 +115,12 @@
 		0A01D28A21B7B28500D9A730 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0AF8F0D221B8C1ED00D09F99 /* GetData.swift */,
+				0A90E1EC21B8DB44007E7DFD /* promo.swift */,
+				0A921E1F21B91802009A09FE /* Collection.swift */,
+				0A921E2121B91905009A09FE /* ArrayCollection.swift */,
+				0A921E2321B9FFF7009A09FE /* Menu.swift */,
+				0A921E2521BA4AB2009A09FE /* Price.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -142,6 +166,7 @@
 				0A01D26E21B7B24900D9A730 /* Frameworks */,
 				0A01D26F21B7B24900D9A730 /* Resources */,
 				1D246E6714B97DBE03CA60C5 /* [CP] Embed Pods Frameworks */,
+				CD7C680DD746EA50279E52FB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,16 +234,26 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +283,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CD7C680DD746EA50279E52FB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseFirestore/gRPCCertificates-Firestore.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/gRPCCertificates-Firestore.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,11 +314,19 @@
 			files = (
 				0A01D27D21B7B24900D9A730 /* BurgerHut.xcdatamodeld in Sources */,
 				0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */,
+				0A921E2421B9FFF7009A09FE /* Menu.swift in Sources */,
 				0ACB3FC321B7CB520070B4BD /* moreViewController.swift in Sources */,
+				0A921E2021B91802009A09FE /* Collection.swift in Sources */,
+				0A921E2221B91905009A09FE /* ArrayCollection.swift in Sources */,
+				0AF8F0D521B8C24800D09F99 /* homeCollectionViewCell.swift in Sources */,
 				0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */,
+				0A921E2621BA4AB2009A09FE /* Price.swift in Sources */,
 				0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */,
 				0ACB3FBF21B7B93B0070B4BD /* menuViewController.swift in Sources */,
+				0A90E1ED21B8DB44007E7DFD /* promo.swift in Sources */,
+				0AF8F0D121B8BFA500D09F99 /* HomeTableCellTableViewCell.swift in Sources */,
 				0ACB3FC121B7B94E0070B4BD /* OrderViewController.swift in Sources */,
+				0AF8F0D321B8C1ED00D09F99 /* GetData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

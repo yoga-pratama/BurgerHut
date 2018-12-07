@@ -36,6 +36,8 @@ class barTabBarController: UITabBarController {
         
         home.titlePositionAdjustment = UIOffset(horizontal: 0.0,vertical: 1.0)
         
+        
+        
         let menu = (self.tabbar.items?[1])! as UITabBarItem
         
          menu.image = UIImage.fontAwesomeIcon(name: .list, style: .solid, textColor: UIColor.blue, size: CGSize(width: 40 , height: 40))
@@ -49,6 +51,7 @@ class barTabBarController: UITabBarController {
         
         order.titlePositionAdjustment = UIOffset(horizontal: 0.0,vertical: 1.0)
         
+        self.tabBar.unselectedItemTintColor = UIColor.black
         
     }
 

@@ -8,4 +8,5 @@ target 'BurgerHut' do
   # Pods for BurgerHut
   pod 'FontAwesome.swift'
   pod 'Firebase/Core'
+  pod 'Firebase/Firestore'
 end
