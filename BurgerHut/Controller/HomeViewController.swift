@@ -80,6 +80,7 @@ class HomeViewController: UIViewController {
         
      //   homeTableView.rowHeight = UITableView.automaticDimension
      //homeTableView.estimatedRowHeight = 300
+      //  homeTableView.backgroundColor = UIColor.lightGray
     }
     
     func setReload(){
@@ -111,6 +112,7 @@ extension HomeViewController : UITableViewDelegate ,UITableViewDataSource{
              cell.TableSize = "small_banner"
         case 1 :
              cell.TableSize = "menu_banner"
+            
         case 2 :
              cell.TableSize = "large_banner"
         default:
@@ -147,9 +149,41 @@ extension HomeViewController : UITableViewDelegate ,UITableViewDataSource{
          
 
         return size
-        
     
-        
-       
     }
+    
+    /*
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+      
+        
+       // headerView.backgroundColor = UIColor(red: 236, green: 240, blue: 240, alpha: 1.0)
+        let view = UIView()
+
+        let label = UILabel()
+        label.text = "Menu"
+        label.frame = CGRect(x: 15, y: 5, width: 100, height: 35)
+        view.addSubview(label)
+        
+        return view
+    } */
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        
+        var text = ""
+        switch section {
+        case 0:
+             text = "Latest Promo"
+        case 1 :
+             text = "Menu"
+        case 2 :
+             text = "News"
+        default:
+            break
+        }
+       
+      return text
+    }
+   
 }

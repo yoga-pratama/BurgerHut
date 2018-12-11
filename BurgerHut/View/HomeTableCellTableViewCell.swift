@@ -20,7 +20,7 @@ class HomeTableCellTableViewCell: UITableViewCell {
         self.homeCollectionView.delegate = self
         self.homeCollectionView.dataSource = self
        
-        
+        homeCollectionView.backgroundColor = UIColor.white
       
     }
     
@@ -75,7 +75,8 @@ extension HomeTableCellTableViewCell : UICollectionViewDelegate , UICollectionVi
             let menu =  sharedArray.menuArray[indexPath.row]
             let image = UIImage(named: menu.menu_pic)
             cell.promoImage.image = image
-            cell.promoImage.layer.cornerRadius = 5
+            cell.promoImage.clipsToBounds = true
+            cell.promoImage.layer.cornerRadius = 20
         case "large_banner":
             let promoLarge =  sharedArray.promoArray.filter{
                  return $0.promo_type.contains("large")
@@ -84,7 +85,6 @@ extension HomeTableCellTableViewCell : UICollectionViewDelegate , UICollectionVi
             let image = UIImage(named: promoLargeContent.promo_pic)
             cell.promoImage.image = image
             cell.promoImage.layer.cornerRadius = 5
-         //   cell.promoImage.frame = CGRect(x: 0, y: 0, width: 100 , height: 100)
         default:
             let promo =  sharedArray.promoArray[indexPath.row]
             let image = UIImage(named: promo.promo_pic)

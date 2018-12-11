@@ -74,17 +74,18 @@ class Getdata{
                     print("appending menu data...")
                     self.db.collection("menu").document(document.documentID).collection("price").getDocuments() { (snapPrice , errPrice) in
                         for docPrice in snapPrice!.documents{
+                            
+                            let priceArray = docPrice.get("price_value") as! NSArray
                             var priceData : [String:Any] = [
                                 "price_id" : document.documentID,
                                 "price_package" : docPrice.data()["price_package"],
                                 "price_size"  : docPrice.data()["price_size"],
-                                "price_value" : docPrice.data()["price_value"]
+                                "price_value" : priceArray
                             ]
                             
-                            var priceDataList = Price(dictionary: priceData)
-                            self.sharedArray.priceArray.append(priceDataList)
-                             print("appending price data...")
-                            
+                           var priceDataList = Price(dictionary: priceData)
+                           self.sharedArray.priceArray.append(priceDataList)
+                            print("appending price data...")
                         }
                     }
                 }
