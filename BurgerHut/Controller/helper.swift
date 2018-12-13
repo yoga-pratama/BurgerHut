@@ -11,6 +11,8 @@ import Foundation
 
 class helper {
     
+    let data = ArrayCollection.sharedArray
+    
     func formatter(value : NSNumber) -> String {
         let formatter = NumberFormatter()
         let  price = value as NSNumber
@@ -18,6 +20,13 @@ class helper {
         formatter.locale = Locale(identifier: "id-ID")
         let returnValue = formatter.string(from: price)
         return returnValue!
+    }
+    
+    func getPrice(menuid : String)->[Price]{
+        let pricePerId = data.priceArray.filter{
+             return $0.price_id == menuid
+        }
+        return pricePerId
     }
     
     

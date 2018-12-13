@@ -69,15 +69,24 @@ class menuViewController: UIViewController {
         if segue.identifier == "menuDetail" {
             if let indexPath = menuTableView.indexPathForSelectedRow {
                 var menu_id : String
+                var menu_pic : String
+                var menu_name : String
                 if isFiltering(){
-                     menu_id  = filterMenu[indexPath.row].menu_id
+                    menu_id  = filterMenu[indexPath.row].menu_id
+                    menu_pic = filterMenu[indexPath.row].menu_pic
+                    menu_name = filterMenu[indexPath.row].menu_name
                 }else{
                      menu_id = shareArray.menuArray[indexPath.row].menu_id
+                    menu_pic = shareArray.menuArray[indexPath.row].menu_pic
+                    menu_name = shareArray.menuArray[indexPath.row].menu_name
                 }
                 
-                let controller = (segue.destination as! UINavigationController).topViewController as! DetailMenuViewController
-               controller.menuID = menu_id
+               let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
+               controller.MenuId = menu_id
+               controller.menuName = menu_name
+               controller.picID  = menu_pic
                controller.navigationItem.leftItemsSupplementBackButton = true
+                
                 print("menu_id : \(menu_id)")
             }
         }
@@ -107,7 +116,7 @@ extension menuViewController : UITableViewDataSource , UITableViewDelegate{
             var image = UIImage(named: menuArray.menu_pic)
             
             var price =  shareArray.priceArray.filter{
-                return $0.price_id == menuArray.menu_id
+                return $0.price_id == menuArray.menu_id && $0.size_id == 1
             }
             
             cell.menuimageView.image = image
@@ -115,9 +124,8 @@ extension menuViewController : UITableViewDataSource , UITableViewDelegate{
             cell.menuimageView.layer.cornerRadius = 10
             cell.menuText.text =  menuArray.menu_name
             if  price.count != 0 {
-                var priceValue  = price[0].price_value as NSArray
-                let value = priceValue.firstObject as! NSNumber
-                let formatValue = helperClass.formatter(value:  value)
+                var priceValue  = price[0].price_value as NSNumber
+                let formatValue = helperClass.formatter(value:  priceValue)
                 cell.menuStartFrom.text = "Start From \(formatValue)"
             }else{
                 cell.menuStartFrom.text = "Start From "
@@ -128,7 +136,7 @@ extension menuViewController : UITableViewDataSource , UITableViewDelegate{
             var image = UIImage(named: menuArray.menu_pic)
             
             var price =  shareArray.priceArray.filter{
-                return $0.price_id == menuArray.menu_id
+                return $0.price_id == menuArray.menu_id && $0.size_id == 1
             }
             
             cell.menuimageView.image = image
@@ -136,9 +144,8 @@ extension menuViewController : UITableViewDataSource , UITableViewDelegate{
             cell.menuimageView.layer.cornerRadius = 10
             cell.menuText.text =  menuArray.menu_name
             if  price.count != 0 {
-                var priceValue  = price[0].price_value as NSArray
-                let value = priceValue.firstObject as! NSNumber
-                let formatValue = helperClass.formatter(value:  value)
+             var priceValue  = price[0].price_value as NSNumber
+             let formatValue = helperClass.formatter(value:  priceValue)
               cell.menuStartFrom.text = "Start From \(formatValue)"
             }else{
                 cell.menuStartFrom.text = "Start From "
