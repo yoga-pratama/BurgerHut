@@ -72,27 +72,12 @@ class Getdata{
                     var menuDataList = Menu(dictionary: menuData)
                     self.sharedArray.menuArray.append(menuDataList)
                     print("appending menu data...")
+                   
                     self.db.collection("menu").document(document.documentID).collection("price").getDocuments() { (snapPrice , errPrice) in
-                    /*   for docPrice in snapPrice!.documents{
-                            print("price \(docPrice.get("price_size"))")
-                        //    let priceArray = docPrice.get("price_value") as! NSArray
-                     /*       var priceData : [String:Any] = [
-                                "price_id" : document.documentID,
-                                "price_package" : docPrice.data()["price_package"],
-                                "price_size"  : docPrice.data()["price_size"],
-                             //   "price_value" : priceArray
-                            ]
-                            
-                           var priceDataList = Price(dictionary: priceData)
-                           self.sharedArray.priceArray.append(priceDataList) */
-                        
-                        
-                        
-                            print("appending price data...")
-                        } */
+
                         for doc in snapPrice!.documents{
                             let price_data = doc.data()["price_data"] as! NSArray
-                            
+                            print("appending price data....")
                             for i  in 0..<price_data.count{
                                 let price_dict = price_data[i] as! [String:Any]
                                 let priceData = [
@@ -103,7 +88,7 @@ class Getdata{
                                 ]
                                 
                                 var priceDataList = Price(dictionary: priceData)
-                                print(priceDataList)
+                            
                                 self.sharedArray.priceArray.append(priceDataList)
                             }
                           
@@ -123,8 +108,36 @@ class Getdata{
     }
     
     
+    func getCartData(username : String){
+        config()
+  db.collection("cart").document("username1").collection("cart_detail").getDocuments(){ (docs, err) in
+        if let err = err {
+            print("error get cart document: \(err)")
+        }else{
+            print("appending cart items...")
+            self.sharedArray.cartArray.removeAll()
+            for doc in docs!.documents {
+                var cart_detail : [String:Any] = [
+                            "cart_id" : doc.documentID,
+                            "cart_qty" : doc.data()["cart_qty"],
+                            "cart_value" :doc.data()["cart_value"],
+                            "food_name" : doc.data()["food_name"],
+                            "food_size" : doc.data()["food_size"],
+                            "user_id"      : doc.data()["user_id"]
+                ]
+                let CartDataList = cart(dictionary: cart_detail)
+                self.sharedArray.cartArray.append(CartDataList)
+            }
+        }
+            
+         }
+        
+    }
+    
+    
     func config(){
         db = Firestore.firestore()
+    
     }
     
     

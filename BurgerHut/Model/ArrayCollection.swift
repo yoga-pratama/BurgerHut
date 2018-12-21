@@ -12,6 +12,8 @@ class ArrayCollection {
   static let sharedArray = ArrayCollection()
   
   var promoArray : [promo] = []
-    var menuArray : [Menu] = []
-    var priceArray : [Price] = []
+  var menuArray : [Menu] = []
+  var priceArray : [Price] = []
+  var cartArray : [cart] = []
+
 }

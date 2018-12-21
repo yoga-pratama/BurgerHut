@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 
 class helper {
@@ -28,6 +29,17 @@ class helper {
         }
         return pricePerId
     }
+    
+    func alertHelper(alertMessage : String) -> UIAlertController{
+       let alertController = UIAlertController(title: "Notification", message:alertMessage , preferredStyle: .alert)
+       let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alertController.addAction(alertAction)
+        
+        return alertController
+    }
+    
+   
     
     
 }

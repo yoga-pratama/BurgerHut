@@ -11,3 +11,4 @@ import Foundation
 typealias promoJSON = [String : Any]
 typealias menuJSON  = [String : Any]
 typealias priceJSON = [String : Any]
+typealias cartJSON = [String:Any]

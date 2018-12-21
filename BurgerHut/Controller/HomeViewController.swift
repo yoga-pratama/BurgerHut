@@ -9,11 +9,12 @@
 import UIKit
 import Foundation
 import FontAwesome_swift
-
+import Firebase
 
 class HomeViewController: UIViewController {
   
     @IBOutlet var barButtonItem : UIBarButtonItem!
+    @IBOutlet var barButtonItemRight : UIBarButtonItem!
     @IBOutlet var homeTableView : UITableView!
     
     var dataPromo : [promo] = []
@@ -32,6 +33,8 @@ class HomeViewController: UIViewController {
             self.data.getMenu {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "load"), object: nil)
             }
+            
+            self.data.getCartData(username: "username1")
          
             
         }
@@ -67,11 +70,15 @@ class HomeViewController: UIViewController {
         let item = UIBarButtonItem(customView: imageView2)
         self.navigationItem.rightBarButtonItem = item */
         
-        var rightIcon = UIImage.fontAwesomeIcon(name: .userCircle, style: .solid, textColor: .white, size: CGSize(width: 40, height: 40))
+        var leftIcon = UIImage.fontAwesomeIcon(name: .userCircle, style: .solid, textColor: .white, size: CGSize(width: 40, height: 40))
+        
+         var rightIcon = UIImage.fontAwesomeIcon(name: .cartPlus, style: .solid, textColor: .white, size: CGSize(width: 30, height: 30))
         
         
-        barButtonItem.image = rightIcon
+        barButtonItem.image = leftIcon
         barButtonItem.tintColor = UIColor.white
+        barButtonItemRight.image = rightIcon
+        barButtonItemRight.tintColor = UIColor.white
     }
     
     
@@ -94,7 +101,26 @@ class HomeViewController: UIViewController {
         print("reload data")
     }
 
-
+    @IBAction func accountTapped(_ sender: UIBarButtonItem) {
+      checkLogin()
+    }
+    
+    
+    
+    func checkLogin(){
+        if  Auth.auth().currentUser != nil{
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "profileID") as! ProfileViewController
+            //    self.present(newViewController, animated: true, completion: nil)
+          self.navigationController!.pushViewController(newViewController, animated: true)
+          //  self.navigationController!.showDetailViewController(newViewController, sender: nil)
+        }else{
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "loginID") as! loginViewController
+            self.present(newViewController, animated: true, completion: nil)
+        }
+    }
+    
 }
 
 

@@ -10,15 +10,16 @@ import UIKit
 import  FontAwesome_swift
 
 class DetailViewController: UIViewController {
-    
-    static let dataShared =  DetailViewController()
+
     var MenuId : String!
     var picID : String!
     var menuName : String!
     let classHelper = helper()
+    let saveClass = saveData.sharedInstance
     var priceArray : [Price] = []
     var priceData : Price!
-   
+    var dataShared = ArrayCollection.sharedArray
+    var getData = Getdata.sharedInstance
     
     
     @IBOutlet weak var foodSize: UISegmentedControl!
@@ -96,22 +97,39 @@ class DetailViewController: UIViewController {
         let cell = priceTableView.cellForRow(at: index) as! DetailTableViewCell
         
         let qty =  Int(cell.qtyStep.value)
-        var total = qty * Int(priceData.price_value)
+        if   qty == 0 {
+            let alert = UIAlertController(title: "Error", message: "Please input Quantity order", preferredStyle:   .alert)
+              let alertActionCancl = UIAlertAction.init(title: "Ok", style: .cancel, handler: nil)
+              alert.addAction(alertActionCancl)
+              present(alert, animated: true, completion: nil)
+        }else{
+            var total = qty * Int(priceData.price_value)
+            
+            let alert = UIAlertController(title: "Confirmation", message: "Add To Cart? ", preferredStyle: .alert)
+            
+            let alertActionOk = UIAlertAction.init(title: "Ok", style: .default, handler: { actionHandler in
+                
+                var user = "testing"
+                var cart_id =  UUID().uuidString
+                var foodsize = self.foodSize.titleForSegment(at: self.foodSize.selectedSegmentIndex)!
+                var user_id = "username1"
+                
+                
+                self.saveClass.saveCart(cart_qty: qty, cart_value: Int(total), food_name: self.menuName, food_size: foodsize, username: user_id)
+                
+                 self.getData.getCartData(username: user_id)
+                
+            })
+            
+            let alertActionCancl = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
+            
+            alert.addAction(alertActionOk)
+            alert.addAction(alertActionCancl)
+              present(alert, animated: true, completion: nil)
+        }
         
-        let alert = UIAlertController(title: "Confirmation", message: "Add To Cart? ", preferredStyle: .alert)
-        
-        let alertActionOk = UIAlertAction.init(title: "Ok", style: .default, handler: { actionHandler in
-            print("oke")
-        })
-        
-        let alertActionCancl = UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil)
-        
-        alert.addAction(alertActionOk)
-        alert.addAction(alertActionCancl)
-        
-        present(alert, animated: true, completion: nil)
-        
-        
+       
+    
     }
     
     /*
@@ -131,6 +149,8 @@ class DetailViewController: UIViewController {
         food_price.text = "\(formatPrice) /pcs"
         priceTableView.reloadData()
     }
+    
+
 }
 
 extension DetailViewController : UITableViewDelegate,UITableViewDataSource{

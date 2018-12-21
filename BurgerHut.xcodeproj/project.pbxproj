@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A016D6F21C244C000D85B41 /* saveData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A016D6E21C244C000D85B41 /* saveData.swift */; };
+		0A016D7121C34A3700D85B41 /* cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A016D7021C34A3700D85B41 /* cart.swift */; };
 		0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27421B7B24900D9A730 /* AppDelegate.swift */; };
 		0A01D27A21B7B24900D9A730 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D27821B7B24900D9A730 /* Main.storyboard */; };
 		0A01D27D21B7B24900D9A730 /* BurgerHut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27B21B7B24900D9A730 /* BurgerHut.xcdatamodeld */; };
@@ -14,7 +16,10 @@
 		0A01D28221B7B24A00D9A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D28021B7B24A00D9A730 /* LaunchScreen.storyboard */; };
 		0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144321B7B5ED0039EA1D /* HomeViewController.swift */; };
 		0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144521B7B62C0039EA1D /* barTabBarController.swift */; };
+		0A36E83021C74D5100BB57D2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36E82F21C74D5100BB57D2 /* CartViewController.swift */; };
+		0A36E83221C757C400BB57D2 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36E83121C757C400BB57D2 /* CartTableViewCell.swift */; };
 		0A522C3D21C0C3A20074F1C5 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A522C3C21C0C3A20074F1C5 /* DetailTableViewCell.swift */; };
+		0A634B9621CB7C8F001D4A27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A634B9521CB7C8F001D4A27 /* ProfileViewController.swift */; };
 		0A90E1ED21B8DB44007E7DFD /* promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90E1EC21B8DB44007E7DFD /* promo.swift */; };
 		0A921E2021B91802009A09FE /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E1F21B91802009A09FE /* Collection.swift */; };
 		0A921E2221B91905009A09FE /* ArrayCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A921E2121B91905009A09FE /* ArrayCollection.swift */; };
@@ -28,6 +33,7 @@
 		0AD963B221BF61BB006E4D7A /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD963B121BF61BB006E4D7A /* helper.swift */; };
 		0AD963B421BF9211006E4D7A /* PickerSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD963B321BF9211006E4D7A /* PickerSizeViewController.swift */; };
 		0AD963B621BF9D2A006E4D7A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD963B521BF9D2A006E4D7A /* DetailViewController.swift */; };
+		0AF7B27521C8ED850075C713 /* loginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF7B27421C8ED850075C713 /* loginViewController.swift */; };
 		0AF8F0D121B8BFA500D09F99 /* HomeTableCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D021B8BFA500D09F99 /* HomeTableCellTableViewCell.swift */; };
 		0AF8F0D321B8C1ED00D09F99 /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D221B8C1ED00D09F99 /* GetData.swift */; };
 		0AF8F0D521B8C24800D09F99 /* homeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */; };
@@ -35,6 +41,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A016D6E21C244C000D85B41 /* saveData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saveData.swift; sourceTree = "<group>"; };
+		0A016D7021C34A3700D85B41 /* cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cart.swift; sourceTree = "<group>"; };
 		0A01D27121B7B24900D9A730 /* BurgerHut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerHut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A01D27421B7B24900D9A730 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A01D27921B7B24900D9A730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +52,10 @@
 		0A01D28321B7B24A00D9A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A21144321B7B5ED0039EA1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0A21144521B7B62C0039EA1D /* barTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barTabBarController.swift; sourceTree = "<group>"; };
+		0A36E82F21C74D5100BB57D2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		0A36E83121C757C400BB57D2 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		0A522C3C21C0C3A20074F1C5 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		0A634B9521CB7C8F001D4A27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0A90E1EC21B8DB44007E7DFD /* promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promo.swift; sourceTree = "<group>"; };
 		0A921E1F21B91802009A09FE /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		0A921E2121B91905009A09FE /* ArrayCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayCollection.swift; sourceTree = "<group>"; };
@@ -58,6 +69,7 @@
 		0AD963B121BF61BB006E4D7A /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
 		0AD963B321BF9211006E4D7A /* PickerSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSizeViewController.swift; sourceTree = "<group>"; };
 		0AD963B521BF9D2A006E4D7A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		0AF7B27421C8ED850075C713 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
 		0AF8F0D021B8BFA500D09F99 /* HomeTableCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCellTableViewCell.swift; sourceTree = "<group>"; };
 		0AF8F0D221B8C1ED00D09F99 /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -120,6 +132,7 @@
 				0AF8F0D421B8C24800D09F99 /* homeCollectionViewCell.swift */,
 				0AD963AB21BE0ABC006E4D7A /* menuTableViewCell.swift */,
 				0A522C3C21C0C3A20074F1C5 /* DetailTableViewCell.swift */,
+				0A36E83121C757C400BB57D2 /* CartTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +146,8 @@
 				0A921E2121B91905009A09FE /* ArrayCollection.swift */,
 				0A921E2321B9FFF7009A09FE /* Menu.swift */,
 				0A921E2521BA4AB2009A09FE /* Price.swift */,
+				0A016D6E21C244C000D85B41 /* saveData.swift */,
+				0A016D7021C34A3700D85B41 /* cart.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -148,6 +163,9 @@
 				0AD963B121BF61BB006E4D7A /* helper.swift */,
 				0AD963B321BF9211006E4D7A /* PickerSizeViewController.swift */,
 				0AD963B521BF9D2A006E4D7A /* DetailViewController.swift */,
+				0A36E82F21C74D5100BB57D2 /* CartViewController.swift */,
+				0AF7B27421C8ED850075C713 /* loginViewController.swift */,
+				0A634B9521CB7C8F001D4A27 /* ProfileViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -251,6 +269,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-BurgerHut/Pods-BurgerHut-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/FontAwesome.swift/FontAwesome_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -264,6 +283,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FontAwesome_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -336,9 +356,14 @@
 				0AD963B221BF61BB006E4D7A /* helper.swift in Sources */,
 				0AF8F0D521B8C24800D09F99 /* homeCollectionViewCell.swift in Sources */,
 				0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */,
+				0A016D7121C34A3700D85B41 /* cart.swift in Sources */,
+				0A634B9621CB7C8F001D4A27 /* ProfileViewController.swift in Sources */,
 				0AD963B421BF9211006E4D7A /* PickerSizeViewController.swift in Sources */,
+				0A016D6F21C244C000D85B41 /* saveData.swift in Sources */,
 				0AD963B621BF9D2A006E4D7A /* DetailViewController.swift in Sources */,
 				0A921E2621BA4AB2009A09FE /* Price.swift in Sources */,
+				0A36E83021C74D5100BB57D2 /* CartViewController.swift in Sources */,
+				0A36E83221C757C400BB57D2 /* CartTableViewCell.swift in Sources */,
 				0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */,
 				0AD963AC21BE0ABC006E4D7A /* menuTableViewCell.swift in Sources */,
 				0ACB3FBF21B7B93B0070B4BD /* menuViewController.swift in Sources */,
@@ -347,6 +372,7 @@
 				0ACB3FC121B7B94E0070B4BD /* OrderViewController.swift in Sources */,
 				0A522C3D21C0C3A20074F1C5 /* DetailTableViewCell.swift in Sources */,
 				0AF8F0D321B8C1ED00D09F99 /* GetData.swift in Sources */,
+				0AF7B27521C8ED850075C713 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
