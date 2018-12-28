@@ -135,6 +135,27 @@ class Getdata{
     }
     
     
+    func getUserData(userid : String){
+        config()
+        db.collection("userData").document(userid).getDocument(){
+            (document, error ) in
+            if let err = error {
+                print("error get user document: \(err)")
+            }else{
+                print("get userprofile data....")
+                var userData : [String : Any ] = [
+                    "phone_number" : document?.get("phone_number"),
+                    "address" : document?.get("address"),
+                    "coord" : [document?.get("geoloc")]
+                ]
+                
+                let userDetail = userprofile(dictionary: userData)
+                self.sharedArray.userArray.append(userDetail)
+            }
+        }
+    }
+    
+    
     func config(){
         db = Firestore.firestore()
     

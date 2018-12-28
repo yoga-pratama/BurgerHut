@@ -15,5 +15,5 @@ class ArrayCollection {
   var menuArray : [Menu] = []
   var priceArray : [Price] = []
   var cartArray : [cart] = []
-
+  var userArray : [userprofile] = []
 }

@@ -14,10 +14,12 @@
 		0A01D27D21B7B24900D9A730 /* BurgerHut.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0A01D27B21B7B24900D9A730 /* BurgerHut.xcdatamodeld */; };
 		0A01D27F21B7B24A00D9A730 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D27E21B7B24A00D9A730 /* Assets.xcassets */; };
 		0A01D28221B7B24A00D9A730 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A01D28021B7B24A00D9A730 /* LaunchScreen.storyboard */; };
+		0A0531BB21D0DB2D00F7C93D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0531BA21D0DB2D00F7C93D /* MapKit.framework */; };
 		0A21144421B7B5ED0039EA1D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144321B7B5ED0039EA1D /* HomeViewController.swift */; };
 		0A21144621B7B62C0039EA1D /* barTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A21144521B7B62C0039EA1D /* barTabBarController.swift */; };
 		0A36E83021C74D5100BB57D2 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36E82F21C74D5100BB57D2 /* CartViewController.swift */; };
 		0A36E83221C757C400BB57D2 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36E83121C757C400BB57D2 /* CartTableViewCell.swift */; };
+		0A4D8C8321D5B4F600042621 /* userprofile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4D8C8221D5B4F600042621 /* userprofile.swift */; };
 		0A522C3D21C0C3A20074F1C5 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A522C3C21C0C3A20074F1C5 /* DetailTableViewCell.swift */; };
 		0A634B9621CB7C8F001D4A27 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A634B9521CB7C8F001D4A27 /* ProfileViewController.swift */; };
 		0A90E1ED21B8DB44007E7DFD /* promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90E1EC21B8DB44007E7DFD /* promo.swift */; };
@@ -50,10 +52,12 @@
 		0A01D27E21B7B24A00D9A730 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A01D28121B7B24A00D9A730 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A01D28321B7B24A00D9A730 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A0531BA21D0DB2D00F7C93D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		0A21144321B7B5ED0039EA1D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		0A21144521B7B62C0039EA1D /* barTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barTabBarController.swift; sourceTree = "<group>"; };
 		0A36E82F21C74D5100BB57D2 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
 		0A36E83121C757C400BB57D2 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		0A4D8C8221D5B4F600042621 /* userprofile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userprofile.swift; sourceTree = "<group>"; };
 		0A522C3C21C0C3A20074F1C5 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		0A634B9521CB7C8F001D4A27 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		0A90E1EC21B8DB44007E7DFD /* promo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = promo.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0531BB21D0DB2D00F7C93D /* MapKit.framework in Frameworks */,
 				F9A6D705281C6E0FD1EE16FF /* Pods_BurgerHut.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -148,6 +153,7 @@
 				0A921E2521BA4AB2009A09FE /* Price.swift */,
 				0A016D6E21C244C000D85B41 /* saveData.swift */,
 				0A016D7021C34A3700D85B41 /* cart.swift */,
+				0A4D8C8221D5B4F600042621 /* userprofile.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 		EEEEFE00AF2A2BD0CF02CAC6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A0531BA21D0DB2D00F7C93D /* MapKit.framework */,
 				E480B9F0F770AEFB47F97333 /* Pods_BurgerHut.framework */,
 			);
 			name = Frameworks;
@@ -222,6 +229,11 @@
 				TargetAttributes = {
 					0A01D27021B7B24900D9A730 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -355,6 +367,7 @@
 				0A921E2221B91905009A09FE /* ArrayCollection.swift in Sources */,
 				0AD963B221BF61BB006E4D7A /* helper.swift in Sources */,
 				0AF8F0D521B8C24800D09F99 /* homeCollectionViewCell.swift in Sources */,
+				0A4D8C8321D5B4F600042621 /* userprofile.swift in Sources */,
 				0A01D27521B7B24900D9A730 /* AppDelegate.swift in Sources */,
 				0A016D7121C34A3700D85B41 /* cart.swift in Sources */,
 				0A634B9621CB7C8F001D4A27 /* ProfileViewController.swift in Sources */,

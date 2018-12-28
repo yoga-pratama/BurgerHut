@@ -35,8 +35,12 @@ class HomeViewController: UIViewController {
             }
             
             self.data.getCartData(username: "username1")
-         
             
+            let uid = Auth.auth().currentUser?.uid
+            if uid != nil{
+              self.data.getUserData(userid: uid!)
+            }
+        
         }
     
          

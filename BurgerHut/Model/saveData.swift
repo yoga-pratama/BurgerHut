@@ -119,5 +119,11 @@ class saveData{
         }
         
     }
+    
+    
+    func userUpdateProfile(username : String , data : [String:Any]){
+            config()
+          db.collection("userData").document(username).setData(data)
+    }
   
 }

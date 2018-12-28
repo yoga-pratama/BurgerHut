@@ -90,6 +90,7 @@ class loginViewController: UIViewController {
                     print("ada error : \(err.localizedDescription)")
                 }else{
                     print("testUser \(user)")
+                    self.dismiss(animated: true, completion: nil)
                 }
             })
         }
